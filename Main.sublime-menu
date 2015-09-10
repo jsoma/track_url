@@ -1,0 +1,11 @@
+[
+  {
+    "caption": "Tools",
+    "mnemonic": "t",
+    "id": "tools",
+    "children":
+    [
+       { "caption": "Track URL...", "command": "track_url", "id": "trackurl" }
+    ]
+  }
+]
