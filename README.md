@@ -4,16 +4,16 @@ A quick-and-dirty Sublime Text 2 plugin for tracking the contents of a URL in a 
 
 ## Installation
 
-1) Open up Finder
-2) Command+Shift+G
-3) Type in `~/Library/Application Support/Sublime Text 2/Packages/`
-4) Copy the `track_url` (or whatever it's called) directory into that folder
-5) Open up Sublime Text 2 and rejoice
+1. Open up Finder
+2. Command+Shift+G
+3. Type in `~/Library/Application Support/Sublime Text 2/Packages/`
+4. Copy the `track_url` (or whatever it's called) directory into that folder
+5. Open up Sublime Text 2 and rejoice
 
 Or, if you're fancy, just clone the repo into that folder.
 
 ## Use
 
-Command + Shift + P, type "Track URL" and select it. Type in the URL to track (or have it already selected) and hit enter. It'll update every 2 seconds.
+`command + shift + P`, type "Track URL" and select it. Type in the URL to track (or have it already selected) and hit enter. It'll update every 2 seconds.
 
-Or, if you prefer menus, `Tools > Track Url`.
+Or! If you like menus, `Tools > Track Url`.
