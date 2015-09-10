@@ -4,6 +4,8 @@ A quick-and-dirty Sublime Text 2 plugin for tracking the contents of a URL in a 
 
 ## Installation
 
+### OS X
+
 1. Open up Finder
 2. Command+Shift+G
 3. Type in `~/Library/Application Support/Sublime Text 2/Packages/`
@@ -11,6 +13,10 @@ A quick-and-dirty Sublime Text 2 plugin for tracking the contents of a URL in a 
 5. Open up Sublime Text 2 and rejoice
 
 Or, if you're fancy, just clone the repo into that folder.
+
+### Windows
+
+Copy the folder to `%appdata%\Sublime Text 2` and you'll be good to go
 
 ## Use
 
