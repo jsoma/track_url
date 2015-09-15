@@ -37,25 +37,29 @@ class URLTracker():
   
   def update_panel(self):
     window = self.view.window()
-    content = urllib2.urlopen(self.url).read()
-
-    # Save what section is being looked at
-    position = self.view.viewport_position()
-    self.view.set_read_only(False)
     
-    # Erase the contents of the panel and
-    # replace with the new content
-    edit = self.view.begin_edit()
-    region = sublime.Region(0, self.view.size())
-    self.view.erase(edit, region)
-    self.view.insert(edit, 0, content)
-    self.view.end_edit(edit)
+    try:
+      content = urllib2.urlopen(self.url).read()
 
-    self.view.set_read_only(True)
+      # Save what section is being looked at
+      position = self.view.viewport_position()
+      self.view.set_read_only(False)
     
-    # Reset the view to where it was before
-    self.view.set_viewport_position(position)
+      # Erase the contents of the panel and
+      # replace with the new content
+      edit = self.view.begin_edit()
+      region = sublime.Region(0, self.view.size())
+      self.view.erase(edit, region)
+      self.view.insert(edit, 0, content)
+      self.view.end_edit(edit)
 
+      self.view.set_read_only(True)
+    
+      # Reset the view to where it was before
+      self.view.set_viewport_position(position)
+    except:
+      pass
+    
 class TrackUrlCommand(sublime_plugin.TextCommand):
   def run(self, edit):
     default = ""
